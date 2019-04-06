@@ -3,21 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>웹프로그래밍 강의 실습</title>
+    <style>
+table {
+  border-collapse: collapse;
+
+
+}
+tr {
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+thead, tfoot { /* <thead>의 모든 셀에 적용 */
+	background : darkgray;
+	color : yellow;
+}
+tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
+	background : aliceblue;
+}
+tbody tr:hover { /* 마우스가 올라오면 pink 배경 */
+	background : pink;
+}
+    </style>
   </head>
   <body>
     <center>
-
-
     <hr>
     <h1>웹프로그래밍 실습결과</h1>
     <h2>우현종</h2>
-  <table border="1" width="100%">
-    <tr>
-      <td>주차</td>
+  <table width="90%" >
+    <thead>
+      <tr><td>주차</td>
       <td>주제</td>
       <td>실습경로</td>
     </tr>
-    <tr>
+
+    </thead>
+    <tfoot>
+      <tr>
+        <td>합계
+        </td>
+        <td>건수
+        </td>
+        <td>경로
+        </td>
+      </tr>
+    </tfoot>
+    <tbody><tr>
       <td>1</td>
       <td>강의소개</td>
       <td>-</td>
@@ -66,7 +98,9 @@
       <td>-</td>
       <td>-</td>
       <td><a href="site04/index.html">site04/index.html</a></td>
-    </tr>
+    </tr></tbody>
+
+
   </table>
 
     </center>
